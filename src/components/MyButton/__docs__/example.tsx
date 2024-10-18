@@ -15,6 +15,8 @@ function Example(props: ButtonCustomProps) {
       disabled={props.disabled}
       size={props.size}
       onClick={props.onClick}
+      borderColor={props.borderColor}
+      borderSize={props.size}
     />
   );
 }

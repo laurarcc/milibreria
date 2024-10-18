@@ -11,8 +11,10 @@ export const Primary: Story = {
     text: "Button primary",
     txtcolor: "white",
     bgcolor: "#ce2f5e",
-    disabled: false,
+    disabled: true,
     size: "small",
+    borderColor: "black",
+    borderSize: "small",
     onClick: () => alert("Button Primary"),
   },
 };
@@ -23,6 +25,8 @@ export const Secondary: Story = {
     bgcolor: "#7b102f",
     disabled: false,
     size: "small",
+    borderColor: "black",
+    borderSize: "small",
     onClick: () => alert("Button secondary"),
   },
 };

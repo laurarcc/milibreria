@@ -11,12 +11,15 @@ export interface ButtonCustomProps {
   disabled?: boolean; //prop disabled. Es opcional y es de tipo boolean
   onClick?: MouseEventHandler<HTMLButtonElement>; //prop onClick opcional y responde al
   //evento de picar el botón
+  borderColor: string;
+  borderSize?: "small" | "medium" | "large";
 }
 
 //Defino mi componente CustomButton y le digo que las props son las que definí arriba
 function MyButton(props: ButtonCustomProps) {
   //Paso el valor de las props a un objeto:
-  const { bgcolor, text, txtcolor, disabled, onClick, size } = props;
+  const { bgcolor, text, txtcolor, disabled, onClick, size, borderColor, borderSize } =
+    props;
   return (
     //Uso el Button de la librería MUI y lo personalizo con las props que pasan a mi componente.
     <Button
@@ -24,7 +27,12 @@ function MyButton(props: ButtonCustomProps) {
       onClick={onClick}
       disabled={disabled}
       size={size}
-      sx={{ backgroundColor: bgcolor, color: txtcolor }}
+      sx={{
+        backgroundColor: bgcolor,
+        color: txtcolor,
+        borderColor: borderColor,
+        borderSize: size,
+      }}
     >
       {text}
     </Button>
