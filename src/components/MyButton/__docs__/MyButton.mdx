@@ -1,8 +1,8 @@
 import { Canvas, Meta } from "@storybook/blocks";
  import Example from "./example.tsx";
- import * as CustomButton from "./MyButton.stories.tsx";
+ import * as ButtonCustomProps from "./MyButton.stories.tsx";
 
- <Meta of={CustomButton} title="CustomButton" />
+ <Meta of={ButtonCustomProps} title="ButtonCustomProps" />
 
  # CustomButton
 
@@ -15,11 +15,11 @@ import { Canvas, Meta } from "@storybook/blocks";
  ## Usage
 
  ```ts
- import {CustomButton} from 'milibreria';
+ import {ButtonCustomProps} from 'milibreria';
 
  function Example(){
   return (
-      <CustomButton
+      <ButtonCustomProps
         text: "Button primary",
         txtcolor: 'black',
         bgcolor: 'red',
@@ -35,16 +35,16 @@ import { Canvas, Meta } from "@storybook/blocks";
 
 #### Example
 
- <Canvas of={CustomButton.Secondary} />
+ <Canvas of={ButtonCustomProps.Secondary} />
 
  ## Usage
 
  ```ts
- import {CustomButton} from 'milibreria';
+ import {ButtonCustomProps} from 'milibreria';
 
  function Example(){
   return (
-       <CustomButton
+       <ButtonCustomProps
          text: "Button secondary",
          txtcolor: 'white',
          bgcolor: 'pink',
