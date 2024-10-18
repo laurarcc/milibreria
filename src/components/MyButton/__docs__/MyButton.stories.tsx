@@ -9,8 +9,8 @@ type Story = StoryObj<typeof Example>;
 export const Primary: Story = {
   args: {
     text: "Button primary",
-    txtcolor: "black",
-    bgcolor: "red",
+    txtcolor: "white",
+    bgcolor: "#ce2f5e",
     disabled: false,
     size: "small",
     onClick: () => alert("Button Primary"),
@@ -20,7 +20,7 @@ export const Secondary: Story = {
   args: {
     text: "Button secondary",
     txtcolor: "white",
-    bgcolor: "pink",
+    bgcolor: "#7b102f",
     disabled: false,
     size: "small",
     onClick: () => alert("Button secondary"),
