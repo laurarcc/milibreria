@@ -16,7 +16,9 @@ function Example(props: ButtonCustomProps) {
       size={props.size}
       onClick={props.onClick}
       borderColor={props.borderColor}
-      borderSize={props.size}
+      borderWidth={props.borderWidth}
+      hoverTxtColor={props.hoverTxtColor}
+      hoverColor={props.hoverColor}
     />
   );
 }
