@@ -18,7 +18,7 @@ export interface ButtonCustomProps {
 //Defino mi componente CustomButton y le digo que las props son las que definí arriba
 function MyButton(props: ButtonCustomProps) {
   //Paso el valor de las props a un objeto:
-  const { bgcolor, text, txtcolor, disabled, onClick, size, borderColor, borderSize } =
+  const { bgcolor, text, txtcolor, disabled, onClick, size, borderColor } =
     props;
   return (
     //Uso el Button de la librería MUI y lo personalizo con las props que pasan a mi componente.
