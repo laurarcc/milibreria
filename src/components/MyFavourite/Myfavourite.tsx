@@ -4,7 +4,7 @@ import IconButton from "@mui/material/IconButton";
 
 //Declaro la interface del componente.
 export interface FavCustom {
-  onClick?: MouseEventHandler<HTMLButtonElement>;//prop onClick opcional y responde al
+  onClick?: MouseEventHandler<HTMLButtonElement>;
   favcolor:
     | "inherit"
     | "default"
@@ -14,15 +14,16 @@ export interface FavCustom {
     | "info"
     | "success"
     | "warning"; //prop de la clase icon que hereda el favourite icon
+  disabled?: boolean; //prop disabled. Es opcional y es de tipo boolean
 }
 
 //Defino mi componente FavCustom y le digo que las props son las que definí arriba
 function FavouriteCustom(props: FavCustom) {
   //Paso el valor de las props a un objeto:
-  const { favcolor, onClick } = props;
+  const { favcolor, onClick, disabled } = props;
   return (
-    <IconButton>
-      <FavouriteIcon onClick={onClick} sx={{ color: favcolor }}></FavouriteIcon>
+    <IconButton onClick={onClick} disabled={disabled}>
+      <FavouriteIcon color={favcolor} />
     </IconButton>
   );
 }

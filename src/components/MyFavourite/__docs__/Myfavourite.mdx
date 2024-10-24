@@ -20,8 +20,9 @@ import { Canvas, Meta } from "@storybook/blocks";
  function FavExample(){
   return (
       <FavCustom
-        favcolor: 'black',
-        onClick: () => alert("FavouriteIcon Primary")
+        favcolor: 'inherit',
+        onClick: () => alert("FavouriteIcon Primary"),
+        disabled: true
       />
   );
  };
@@ -41,8 +42,8 @@ import { Canvas, Meta } from "@storybook/blocks";
  function FavExample(){
   return (
        <FavCustom
-          favcolor: 'black',
-          disabled: true,
+          favcolor: 'inherit',
+          disabled: false,
           onClick: () => alert("FavouriteIcon Secondary")
        />
    );

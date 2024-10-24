@@ -10,7 +10,8 @@ describe("CustomButton component", () => {
         txtcolor="white"
         bgcolor="orange"
         borderColor={"black"}
-        borderSize={"small"}
+        hoverColor={"white"}
+        hoverTxtColor={"black"}
       />,
     );
     const button = screen.getByRole("button");
