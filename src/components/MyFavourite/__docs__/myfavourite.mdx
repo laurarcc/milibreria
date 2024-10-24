@@ -1,0 +1,49 @@
+import { Canvas, Meta } from "@storybook/blocks";
+ import FavExample from "./favexample.tsx";
+ import * as FavCustom from "./myfavourite.stories.tsx";
+
+ <Meta of={FavCustom} title="FavCustom" />
+
+ # CustomButton
+
+ Componente de botón con diferentes especializaciones.
+
+ #### FavExample
+
+ <Canvas of={FavCustom.Primary} />
+
+ ## Usage
+
+ ```ts
+ import {FavCustom} from 'milibreria';
+
+ function FavExample(){
+  return (
+      <FavCustom
+        favcolor: 'black',
+        onClick: () => alert("FavouriteIcon Primary")
+      />
+  );
+ };
+
+ export default FavExample;
+ ```
+
+#### FavExample
+
+ <Canvas of={FavCustom.Secondary} />
+
+ ## Usage
+
+ ```ts
+ import {FavCustom} from 'milibreria';
+
+ function FavExample(){
+  return (
+       <FavCustom
+          favcolor: 'black',
+          disabled: true,
+          onClick: () => alert("FavouriteIcon Secondary")
+       />
+   );
+  };
