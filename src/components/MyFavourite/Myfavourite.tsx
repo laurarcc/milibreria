@@ -5,9 +5,9 @@ import IconButton from "@mui/material/IconButton";
 //Declaro la interface del componente.
 export interface FavCustom {
   onClick?: MouseEventHandler<HTMLButtonElement>;
+  //favcolor: "inherit" | "default" | "primary" | "secondary"; //prop de la clase icon que hereda el favourite icon
   favcolor:
     | "inherit"
-    | "default"
     | "primary"
     | "secondary"
     | "error"

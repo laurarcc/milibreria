@@ -1,8 +1,8 @@
 import { MouseEventHandler } from 'react';
-export interface FavCustom {
+export interface FavBorderCustom {
     onClick?: MouseEventHandler<HTMLButtonElement>;
     favcolor: "inherit" | "primary" | "secondary" | "error" | "info" | "success" | "warning";
     disabled?: boolean;
 }
-declare function FavouriteCustom(props: FavCustom): import("react/jsx-runtime").JSX.Element;
-export default FavouriteCustom;
+declare function FavouriteBorderCustom(props: FavBorderCustom): import("react/jsx-runtime").JSX.Element;
+export default FavouriteBorderCustom;
