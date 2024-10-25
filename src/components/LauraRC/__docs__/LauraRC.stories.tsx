@@ -15,7 +15,6 @@ export const Primary: Story = {
 export const Secondary: Story = {
     args: {
         onClick: () => alert("Mi componente 2"),
-        favcolor: "warning",
         disabled:false
     },
 };
