@@ -1,0 +1,48 @@
+import { Canvas, Meta } from "@storybook/blocks";
+ import LauraRCexample from "./LauraRCexample.tsx";
+ import * as LauraRCustom from "./LauraRC.stories.tsx";
+
+ <Meta of={LauraRCustom} title="LauraRCustom" />
+
+ # CustomButton
+
+ Componente de botón con diferentes especializaciones.
+
+ #### LauraRCexample
+
+ <Canvas of={LauraRCustom.Primary} />
+
+ ## Usage
+
+ ```ts
+ import {LauraRCustom} from 'milibreria';
+
+ function LauraRCexample(){
+  return (
+      <LauraRCustom
+        onClick: () => alert("Mi componente custom 1"),
+        disabled: true
+      />
+  );
+ };
+
+ export default LauraRCexample;
+ ```
+
+#### LauraRCexample
+
+ <Canvas of={LauraRCustom.Secondary} />
+
+ ## Usage
+
+ ```ts
+ import {LauraRCustom} from 'milibreria';
+
+ function LauraRCexample(){
+  return (
+       <LauraRCustom
+          disabled: false,
+          onClick: () => alert("Mi componente custom 2")
+       />
+   );
+  };
