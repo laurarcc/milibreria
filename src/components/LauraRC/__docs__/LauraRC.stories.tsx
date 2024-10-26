@@ -9,12 +9,20 @@ type Story = StoryObj<typeof LauraRCexample>;
 export const Primary: Story = {
     args: {
         onClick: () => alert("Mi componente 1"),
-        disabled:false
+        disabled: false,
+        checked: true,
+        defaultChecked: false,
+        color: "primary",
+        size: "small"
     },
 };
 export const Secondary: Story = {
     args: {
         onClick: () => alert("Mi componente 2"),
-        disabled:false
+        disabled: false,
+        checked: false,
+        defaultChecked: true,
+        color: "secondary",
+        size: "medium"
     },
 };

@@ -21,7 +21,11 @@ import { Canvas, Meta } from "@storybook/blocks";
   return (
       <LauraRCustom
         onClick: () => alert("Mi componente custom 1"),
-        disabled: true
+        disabled: true,
+        checked: true,
+        defaultChecked: false,
+        color: "primary",
+        size: "small"
       />
   );
  };
@@ -42,7 +46,11 @@ import { Canvas, Meta } from "@storybook/blocks";
   return (
        <LauraRCustom
           disabled: false,
-          onClick: () => alert("Mi componente custom 2")
+          onClick: () => alert("Mi componente custom 2"),
+          checked: false,
+          defaultChecked: true,
+          color: "secondary",
+          size: "medium"
        />
    );
   };

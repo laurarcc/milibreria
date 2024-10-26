@@ -1,2 +1,2 @@
-export { default as FavCustom } from './Myfavourite.tsx';
+export { default as FavouriteCustom } from './Myfavourite.tsx';
 export * from './Myfavourite.tsx';

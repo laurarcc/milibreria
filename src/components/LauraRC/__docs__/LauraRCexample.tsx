@@ -7,6 +7,10 @@ function LauraRCexample(props: LauraRCustom) {
     <LauraRc
       onClick={props.onClick}
       disabled={props.disabled}
+      checked={props.checked}
+      defaultChecked={props.defaultChecked}
+      color={props.color}
+      size={props.size}
     />
   );
 }
