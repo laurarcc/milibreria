@@ -1,11 +1,11 @@
+//Laura Rodríguez Castellano 2ºDAM
 import { MouseEventHandler } from "react";
 import FavoriteBorder from "@mui/icons-material/FavoriteBorder";
 import IconButton from "@mui/material/IconButton";
 
-//Declaro la interface del componente.
+//Declaro la interface del componente para hacer el borde del icono "me gusta"
 export interface FavBorderCustom {
   onClick?: MouseEventHandler<HTMLButtonElement>;
-  //favcolor: "inherit" | "default" | "primary" | "secondary"; //prop de la clase icon que hereda el favourite icon
   favcolor:
     | "inherit"
     | "primary"
@@ -13,12 +13,12 @@ export interface FavBorderCustom {
     | "error"
     | "info"
     | "success"
-    | "warning";
+    | "warning"; //prop para asignar los colores al icono "me gusta"
 
   disabled?: boolean; //prop disabled. Es opcional y es de tipo boolean
 }
 
-//Defino mi componente FavCustom y le digo que las props son las que definí arriba
+//Defino mi componente FavBorderCustom y le digo que las props son las que definí arriba
 function FavouriteBorderCustom(props: FavBorderCustom) {
   //Paso el valor de las props a un objeto:
   const { favcolor, onClick, disabled } = props;

@@ -1,3 +1,4 @@
+//Laura Rodríguez Castellano 2ºDAM
 import { MouseEventHandler } from "react";
 import Button from "@mui/material/Button";
 
@@ -13,8 +14,8 @@ export interface ButtonCustomProps {
   //evento de picar el botón
   borderColor: string; //color del botón
   borderWidth?: "small" | "medium" | "large"; //ancho del borde
-  hoverTxtColor: string;
-  hoverColor: string;
+  hoverTxtColor: string; //prop para cuando el ratón pasa por encima del botón y cambia el color de fondo
+  hoverColor: string; //prop que cambia el color del texto cuando el ratón pasa por encima del botón
 }
 
 //Defino mi componente CustomButton y le digo que las props son las que definí arriba

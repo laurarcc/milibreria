@@ -1,3 +1,4 @@
+//Laura Rodríguez Castellano 2ºDAM
 import React from "react";
 //importamos nuestro componente FavCustom y sus props
 import FavouriteCustom, { FavCustom } from "../Myfavourite";

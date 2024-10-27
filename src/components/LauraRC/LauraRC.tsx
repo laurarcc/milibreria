@@ -1,3 +1,4 @@
+//Laura Rodríguez Castellano 2ºDAM
 import { MouseEventHandler } from "react";
 import Checkbox from "@mui/material/Checkbox";
 
@@ -14,7 +15,8 @@ export interface LauraRCustom {
 //Defino mi componente LauraRc y le digo que las props son las que definí arriba
 function LauraRc(props: LauraRCustom) {
   //Paso el valor de las props a un objeto:
-  const { onClick, disabled, checked, defaultChecked, size, color } = props;
+  const { onClick, disabled, checked,
+    defaultChecked, size, color } = props;
   return (
     <Checkbox
       onClick={onClick}

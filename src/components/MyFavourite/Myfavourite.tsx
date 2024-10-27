@@ -1,11 +1,11 @@
+//Laura Rodríguez Castellano 2ºDAM
 import { MouseEventHandler } from "react";
 import FavouriteIcon from "@mui/icons-material/Favorite";
 import IconButton from "@mui/material/IconButton";
 
-//Declaro la interface del componente.
+//Declaro la interface del componente del icono "me gusta".
 export interface FavCustom {
   onClick?: MouseEventHandler<HTMLButtonElement>;
-  //favcolor: "inherit" | "default" | "primary" | "secondary"; //prop de la clase icon que hereda el favourite icon
   favcolor:
     | "inherit"
     | "primary"

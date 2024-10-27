@@ -1,3 +1,4 @@
+//Laura Rodríguez Castellano 2ºDAM
 import React from "react";
 //importamos nuestro componente CustomButton y sus props
 import MyButton, { ButtonCustomProps } from "../MyButton";

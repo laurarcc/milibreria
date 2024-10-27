@@ -1,3 +1,4 @@
+//Laura Rodríguez Castellano 2ºDAM
 import type { Meta, StoryObj } from "@storybook/react";
 import favexample from "./favexample"; //importamos el componente favexample
 const meta: Meta<typeof favexample> = {
